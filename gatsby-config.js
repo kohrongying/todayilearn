@@ -1,6 +1,9 @@
 module.exports = {
   siteMetadata: {
     title: "todayilearn",
+    description: "compilation of TIL",
+    author: "ry",
+    siteUrl: "https://todayilearn.rongying.co"
   },
   plugins: [
     "gatsby-plugin-sass",
