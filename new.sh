@@ -15,5 +15,4 @@ title: "$TITLE"
 slug: "/posts/$TITLEF"
 ---
 
-# $TITLE
 EOF
