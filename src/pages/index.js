@@ -4,7 +4,9 @@ import PostLink from "../components/post-link/post-link"
 import Header from "../components/header/header"
 import Layout from "../components/layout/layout"
 import styles from "./index.module.scss"
+import { defineCustomElements as deckDeckGoHighlightElement } from '@deckdeckgo/highlight-code/dist/loader';
 
+deckDeckGoHighlightElement();
 const IndexPage = ({
   data: {
     allMarkdownRemark: { edges },

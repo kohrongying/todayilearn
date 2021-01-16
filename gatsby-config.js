@@ -23,7 +23,19 @@ module.exports = {
         icon: "src/images/icon.png",
       },
     },
-    "gatsby-transformer-remark",
+    {
+      resolve: "gatsby-transformer-remark",
+      options: {
+        plugins: [
+          {
+            resolve: "gatsby-remark-highlight-code",
+            options: {
+              terminal: "carbon"
+            }
+          },
+        ],
+      },
+    },
     "gatsby-plugin-mdx",
     "gatsby-transformer-sharp",
     {
