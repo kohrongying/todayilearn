@@ -16,3 +16,5 @@ slug: "/posts/$TITLEF"
 ---
 
 EOF
+
+echo "New post created: $FILENAME"
