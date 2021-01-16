@@ -11,16 +11,16 @@ docker exec -it cde bash
 ```
 where cde is the first 3 digits of your docker container
 
-| If you have an image but not a container, you can run this for an efficiency boost.
+> If you have an image but not a container, you can run this for an efficiency boost.
 
 ```bash
 docker run -it ubuntu bash
 ```
-## Interactive and tty
+### Interactive and tty
 -it actually stands for interactive (-i / --interactive) and tty (-t / --tty)
 
 - Interactive - like a shell
 - Tty - allocates a pseudo-tty.
 
-## References
+### References
 [docker run reference](https://docs.docker.com/engine/reference/run/)

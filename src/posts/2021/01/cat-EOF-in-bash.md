@@ -13,7 +13,7 @@ echo "second line" >> file.txt
 
 Thank you, 🐱
 
-```bash
+```python
 cat <<EOF > file.txt
 this is my first line
 of my awesome haiku start
