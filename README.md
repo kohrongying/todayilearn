@@ -1,3 +1,11 @@
+# todayilearn
+A small blog to practise daily writing in 2021.
+
+Stack:
+- Gatsby + Mdx
+- Theme by me (see below)
+
+
 ## Gatsby Blog Template
 ![template](blog-template.png)
 
