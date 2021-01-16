@@ -6,7 +6,13 @@ module.exports = {
     siteUrl: "https://todayilearn.rongying.co"
   },
   plugins: [
-    "gatsby-plugin-sass",
+    {
+      resolve: "gatsby-plugin-sass",
+      options: {
+        implementation: require('sass'),
+        additionalData: `@import "${__dirname}/src/styles/styles";`,
+      }
+    },
     "gatsby-plugin-sharp",
     "gatsby-plugin-react-helmet",
     "gatsby-plugin-sitemap",

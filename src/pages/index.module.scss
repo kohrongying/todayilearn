@@ -1,0 +1,12 @@
+.columns {
+  display: grid;
+
+  @include tablet {
+      grid-template-columns: 1fr 1fr;
+      grid-column-gap: 10px;
+  }
+  @include desktop {
+      grid-template-columns: 1fr 1fr;
+      grid-column-gap: 10px;
+  }
+}

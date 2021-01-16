@@ -3,12 +3,7 @@ import { graphql } from "gatsby"
 import PostLink from "../components/post-link/post-link"
 import Header from "../components/header/header"
 import Layout from "../components/layout/layout"
-
-const styles = {
-  display: "grid",
-  gridTemplateColumns: "1fr 1fr",
-  gridColumnGap: "10px",
-}
+import styles from "./index.module.scss"
 
 const IndexPage = ({
   data: {
@@ -24,7 +19,7 @@ const IndexPage = ({
   
       <Header />
 
-      <div style={styles}>
+      <div className={styles.columns}>
         {Posts}
       </div>
 
