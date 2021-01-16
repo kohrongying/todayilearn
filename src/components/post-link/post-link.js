@@ -1,5 +1,6 @@
 import React from "react"
 import { Link } from "gatsby"
+import "./post-link.module.scss"
 
 const PostLink = ({ post }) => (
   <div>
