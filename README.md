@@ -1,8 +1,11 @@
-
-# Gatsby Blog Template
+## Gatsby Blog Template
 ![template](blog-template.png)
 
-[View live site here](https://gatsby-minimal-blog-starter.netlify.app)
+- [View live site here](https://gatsby-minimal-blog-starter.netlify.app)
+- [View Repo here](https://github.com/kohrongying/gatsby-minimal-blog-starter)
+
+[<img src="https://www.netlify.com/img/deploy/button.svg" />](
+https://app.netlify.com/start/deploy?repository=https://github.com/kohrongying/gatsby-minimal-blog-starter)
 
 ### Features
 - Responsive
