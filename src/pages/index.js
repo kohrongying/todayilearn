@@ -4,6 +4,12 @@ import PostLink from "../components/post-link/post-link"
 import Header from "../components/header/header"
 import Layout from "../components/layout/layout"
 
+const styles = {
+  display: "grid",
+  gridTemplateColumns: "1fr 1fr",
+  gridColumnGap: "10px",
+}
+
 const IndexPage = ({
   data: {
     allMarkdownRemark: { edges },
@@ -17,8 +23,11 @@ const IndexPage = ({
     <Layout>
   
       <Header />
-      {Posts}
-  
+
+      <div style={styles}>
+        {Posts}
+      </div>
+
     </Layout>
   )
 
