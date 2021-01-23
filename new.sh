@@ -1,4 +1,4 @@
-#/bin/bash
+#!/bin/bash
 
 TITLE=$@
 TITLEF=$(echo $TITLE | tr " " "-")
