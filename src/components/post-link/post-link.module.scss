@@ -23,3 +23,17 @@
       padding-bottom: 10px;
    }
 }
+
+.thumbnail {
+  width: auto;
+  height: 100px;
+  background-color: #ffffff40;
+  border-radius: 12px;
+  place-content: center;
+  display: grid;
+
+  color: $background-color;
+  font-size: 6.5em;
+  font-weight: bold;
+  overflow: hidden;
+}
