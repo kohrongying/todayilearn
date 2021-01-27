@@ -2,6 +2,7 @@ import React from "react"
 import { graphql } from "gatsby"
 import PostLink from "../components/post-link/post-link"
 import Header from "../components/header/header"
+import Footer from "../components/footer/footer"
 import Layout from "../components/layout/layout"
 import styles from "./index.module.scss"
 import { defineCustomElements as deckDeckGoHighlightElement } from '@deckdeckgo/highlight-code/dist/loader';
@@ -17,13 +18,17 @@ const IndexPage = ({
     .map(edge => <PostLink key={edge.node.id} post={edge.node} />)
 
   return (
-    <Layout>
+    <Layout showHeader={false}>
   
       <Header />
 
       <div className={styles.columns}>
         {Posts}
       </div>
+
+      <Footer>
+        Find me <a href="https://rongying.co">here</a>
+      </Footer>
 
     </Layout>
   )
