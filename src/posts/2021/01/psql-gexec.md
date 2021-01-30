@@ -8,7 +8,7 @@ Recently at work, I was given a task to change the table owner in a postgres dat
 
 Here's the command that was used:
 
-```psql
+```
 SELECT 'ALTER TABLE '|| t.tablename ||' OWNER TO my_new_owner;'
 FROM pg_tables t
 WHERE schemaname = 'public'; \gexec
@@ -37,8 +37,8 @@ Other interesting commands:
 \else
 \endif
 
-\setenv (psql has env variables??)
-\! (subshell)
+\setenv # psql has env variables??
+\!      # subshell
 ```
 
 ### fyi
@@ -49,7 +49,7 @@ Things to note when changing ownership: consider the following:
 - database ownership
 - schema ownership
 
-```psql
+```
 SELECT 'ALTER TABLE '|| t.tablename ||' OWNER TO my_new_owner;'
 FROM pg_tables t
 WHERE schemaname = 'public'; \gexec
@@ -69,12 +69,11 @@ ALTER SCHEMA  name OWNER TO user;
  
 ### Verify
 
-```psql
-
+```
 postgres=> \dn #list schemas
 postgres=> \dt #list tables
 postgres=> \d #list tables/sequences/views
 
 ```
 
-Haha, this just serves as a gist for psql commands haha.
+Haha, this just serves as a gist for psql commands.
