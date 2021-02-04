@@ -17,15 +17,14 @@ where `res` is the response returned from the axios request.
 Here is a simple code snippet to illustrate the circular reference problem:
 ```js
 > const ref = { name: 'ry' }
-undefined
-> ref
 { name: 'ry' }
-> JSON.stringify(res)
-Uncaught ReferenceError: res is not defined
+
 > JSON.stringify(ref)
 '{"name":"ry"}'
+
 > ref.circular = ref
 <ref *1> { name: 'ry', circular: [Circular *1] }
+
 > JSON.stringify(ref)
 Uncaught TypeError: Converting circular structure to JSON
     --> starting at object with constructor 'Object'
