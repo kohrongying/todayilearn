@@ -21,8 +21,6 @@ dependencies:
   react-dom: 16.14.0_react@16.14.0
   react-helmet: 6.1.0_react@16.14.0
   sass: 1.32.7
-devDependencies:
-  pnpm: 5.17.2
 lockfileVersion: 5.2
 packages:
   /@ardatan/aggregate-error/0.0.6:
@@ -11671,13 +11669,6 @@ packages:
       node: '>=6'
     resolution:
       integrity: sha512-7Wjy+9E3WwLOEL30D+m8TSTF7qJJUJLONBnwQp0518siuMxUQUbgZwssaFX+QKlZkjHZcw/IpZCt/H0srrntSg==
-  /pnpm/5.17.2:
-    dev: true
-    engines:
-      node: '>=10.16'
-    hasBin: true
-    resolution:
-      integrity: sha512-X0WEumozKhlYZObL1E+Nmi67f+ZMS+fbpE6vAymlazT2lx0B+Agw9iJsdd//tjAqIzxcsxxgZScx0EIPc42Ulw==
   /portfinder/1.0.28:
     dependencies:
       async: 2.6.3
@@ -16029,7 +16020,6 @@ specifiers:
   gatsby-source-filesystem: ^2.9.0
   gatsby-transformer-remark: ^2.14.0
   gatsby-transformer-sharp: ^2.10.0
-  pnpm: '5'
   react: ^16.13.1
   react-dom: ^16.13.1
   react-helmet: ^6.1.0
