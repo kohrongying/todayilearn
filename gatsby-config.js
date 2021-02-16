@@ -13,6 +13,7 @@ module.exports = {
         additionalData: `@import "${__dirname}/src/styles/styles";`,
       }
     },
+    "gatsby-plugin-pnpm",
     "gatsby-plugin-sharp",
     "gatsby-plugin-react-helmet",
     "gatsby-plugin-sitemap",
