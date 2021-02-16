@@ -37,5 +37,8 @@
     "react-dom": "^16.13.1",
     "react-helmet": "^6.1.0",
     "sass": "^1.32.2"
+  },
+  "devDependencies": {
+    "pnpm": "5"
   }
 }
