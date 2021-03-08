@@ -1,6 +1,6 @@
 ---
 date: "2021-03-08"
-title: "set -e"
+title: "set -euo pipefail"
 slug: "/posts/set--e"
 ---
 
@@ -9,13 +9,17 @@ slug: "/posts/set--e"
 set -e
 set -o errexit 
 
-# Abortt script if variable is dereference when it has not been set 
+# Abort script if variable is dereference when it has not been set 
 # This prevents unbound variables from ever being used.
 set -u
 set -o nounset
+
+# Prevents errors in pipeline from being masked
+# Pipeline return code is that of last command
+set -o pipefail
 ```
 
-Some recommend that scripts be run with `set -eu` right below the shebang line
+Some recommend that scripts be run with `set -euo pipefail` right below the shebang line
 
 ## Trap
 We can also use `trap function ERR` to act as a catch.
