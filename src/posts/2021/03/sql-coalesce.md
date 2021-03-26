@@ -1,5 +1,5 @@
 ---
-date: "2021-03-25"
+date: "2021-03-26"
 title: "sql coalesce"
 slug: "/posts/sql-coalesce"
 ---
@@ -42,7 +42,7 @@ SET column = COALESCE((SELECT lookup_table.value FROM lookup_table
               WHERE lookup_table.other = table.column), column);
 ```
 
-So, if the subquery returns null (value is not in lookup table), it will update the column with the original value. It is important to note the sequence of this. We have to have the lookup value as the argument, otherwise, it defaets the purpose.
+So, if the subquery returns null (value is not in lookup table), it will update the column with the original value. It is important to note the sequence of this. We have to have the lookup value as the argument, otherwise, it defeats the purpose.
 
 Ok, Coalesce is my fav sql function!!
 
