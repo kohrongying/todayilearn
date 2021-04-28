@@ -2,7 +2,8 @@
 
 $tablet-width: 768px;
 $desktop-width: 1024px;
-$background-color: #92A7B7;
+$background-color: hsla(178, 50%, 50%, 1); 
+//hue(0-360), saturation(0-100), lightness(0-100), alpha(0-1)
 
 @mixin tablet {
   @media (min-width: #{$tablet-width}) and (max-width: #{$desktop-width - 1px}) {
