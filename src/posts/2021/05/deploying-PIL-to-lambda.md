@@ -30,6 +30,7 @@ aws lambda publish-layer-version --layer-name LAYER_NAME --zip-file fileb://mypy
 aws lambda update-function-configuration --layers arn:aws:lambda:ap-southeast-1:ACCOUNT_ID:layer:PIL-layer:LAYER_VERSION --function-name FUNCTION_NAME
 ```
 
+Find other images from AWS SAM [here](https://gallery.ecr.aws/sam/build-python3.7)
 
 ## The Why
 
