@@ -16,11 +16,12 @@ sudo su - test-user
 ```
 
 ## Copy the public key over
-In ec2-user:
+In test-uuser:
 ```
-sudo cp -r ~/.ssh /home/test-user/.ssh
-sudo chmod 700 /home/test-user/.ssh
-sudo chmod 600 /home/test-user/.ssh/authorized_keys
+mkdir ~/.ssh
+chmod 700 ~/.ssh
+echo "publickey" > ~/.ssh/authorized_keys
+chmod 600 ~/.ssh/authorized_keys
 ```
 
 I got stuck after copying the public key over.
