@@ -22,6 +22,9 @@ def c():
     print('c begin')
     1/0
     print('c end')
+
+if __name__ == "__main__":
+    a()
 ```
 Output we expect to see a run time error:
 ```
@@ -40,7 +43,7 @@ Traceback (most recent call last):
 ZeroDivisionError: division by zero
 ```
 
-## attempt 2 - catch exception at top of function
+## Attempt 2 - catch exception at top of function
 ```python
 def a():
     print('a begin')
@@ -76,7 +79,7 @@ b end
 a end
 ```
 
-## attempt 3 - try/except at bottom of stacktrace
+## Attempt 3 - try/except at bottom of stacktrace
 ```python
 def a():
     try:
@@ -97,6 +100,9 @@ def c():
     print('c begin')
     1/0
     print('c end')
+
+if __name__ == "__main__":
+    a()
 ```
 
 Output we see the exception was caught in a and functions a and b exited
