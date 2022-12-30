@@ -1,5 +1,5 @@
 ---
-date: "2022-08-08"
+date: "2022-12-28"
 title: "python dataclass"
 slug: "/posts/python-dataclass"
 ---
